@@ -13,8 +13,17 @@
 name="Chriscos";
 butler_name="Johnson"; 
 
+#give the link to google calendar xml file that will contain events occuring today.
+google_calendar_xml_file="foo";
+
+#End of settings. Dont change the code below if you dont know what you are doing.
 
 
+
+
+
+#get calendar before starting program. Do a parse of the data later.
+curl "$google_calendar_xml_file" >> cal.xml;
 
 
 #small error in -v option in older versions of Mac OS. Might give a warning and not play music. Just remove -v .5
@@ -37,6 +46,10 @@ say "The tasks that need to be done today: ";
 
 #right now, this is just a todo list that the program will list off. It would be better done with google calendar. Perhaps a wget to parse the data or something. 
 say -f todo_list.txt;
+
+say "You also need to: ";
+
+
 
 #let the music play. Can have multiple tracklists if using itunes. Might even be better if multiple computers around the house, then track with phone or microcontroller.
 sleep 300;
