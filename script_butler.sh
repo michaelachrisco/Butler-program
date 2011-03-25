@@ -11,7 +11,8 @@
 
 #settings: Change these values freely.
 name="Chriscos";
-butler_name="Johnson"; 
+butler_name="Johnson";
+path_to_music="Trumpet_Voluntary.mp3";
 
 #give the link to google calendar xml file that will contain events occuring today.
 google_calendar_xml_file="foo";
@@ -27,7 +28,7 @@ curl "$google_calendar_xml_file" >> cal.xml;
 
 
 #small error in -v option in older versions of Mac OS. Might give a warning and not play music. Just remove -v .5
-afplay -v .5 "Trumpet_Voluntary.mp3" & 
+afplay -v .5 "$path_to_music" & 
 say "Hello and good morning $name. This is your butler $butler_name.";
 
 sleep 5;
@@ -47,7 +48,8 @@ say "The tasks that need to be done today: ";
 #right now, this is just a todo list that the program will list off. It would be better done with google calendar. Perhaps a wget to parse the data or something. 
 say -f todo_list.txt;
 
-say "You also need to: ";
+#google calendar functionality
+#say "You also need to: ";
 
 
 
