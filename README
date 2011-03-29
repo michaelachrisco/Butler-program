@@ -11,8 +11,15 @@ In the long term I would like to see:
 4) room detection
 5) phone sync and detection
 
+MAC OS:
 In order to make this program work, use:
 chmod -x script_butler.sh
+./script_butler
 
+Linux (planning on testing in Ubuntu):
+not done yet
+
+Windows (planning on testing in XP, Vista, 7)
+not done yet
 
 
