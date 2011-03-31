@@ -4,9 +4,9 @@
 #	1) sync with google calendar
 #	2) room detection using microcontrollers or phone
 #	3) progigating the script with other Nix computers in the house (goes with 2)
-#	4) Create script in Linux (ubuntu, fedora, etc...)
 
-#This script uses MAC OS but can be reused with speak=espeak and afplay = to whatever linux uses as a command line music player.
+
+#This script uses MAC OS
 
 
 #settings: Change these values freely.
@@ -53,6 +53,6 @@ say -f todo_list.txt;
 
 
 
-#let the music play. Can have multiple tracklists if using itunes. Might even be better if multiple computers around the house, then track with phone or microcontroller.
+#let the music play. Can have multiple tracklists if using itunes. 
 sleep 300;
 killall afplay;
